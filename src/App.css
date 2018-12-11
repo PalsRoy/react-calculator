@@ -1,32 +1,53 @@
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Calculator{
+  width: 400px;
+  height: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CalculatorRow {
+  display: flex;
+  width: 100%;
+}
+
+.Result {
+  height: 4em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.5em;
+  outline: 1px solid #888888;
+}
+
+.Button {
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:bold;
+  font-size: 1.4em;
+  background-color: #e0e1e6;
+  color: black;
+  flex: 1;
+  outline: 1px solid #888888;
+}
+
+.Operator {
+  background-color: #fe9241;
+  color: #ffffff;
+}
+
+.ZeroButton {
+  flex-grow: 2.2;
 }
